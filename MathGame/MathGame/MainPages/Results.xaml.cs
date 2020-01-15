@@ -28,9 +28,10 @@ namespace MathGame.MainPages
         List<PlayerResult> results_add_3 = new List<PlayerResult>();
         List<PlayerResult> results_sub_2 = new List<PlayerResult>();
         List<PlayerResult> results_sub_3 = new List<PlayerResult>();
-
         List<PlayerResult> results_mul_2 = new List<PlayerResult>();
         List<PlayerResult> results_mul_3 = new List<PlayerResult>();
+        List<PlayerResult> results_div_2 = new List<PlayerResult>();
+        List<PlayerResult> results_div_3 = new List<PlayerResult>();
         public Results()
         {
             this.InitializeComponent();
@@ -66,6 +67,8 @@ namespace MathGame.MainPages
             results_sub_3 = sqlConnection.Select("subtraction", "digits_3");
             results_mul_2 = sqlConnection.Select("multiplication", "digits_2");
             results_mul_3 = sqlConnection.Select("multiplication", "digits_3");
+            results_div_2 = sqlConnection.Select("division", "digits_2");
+            results_div_3 = sqlConnection.Select("division", "digits_3");
 
         }
 

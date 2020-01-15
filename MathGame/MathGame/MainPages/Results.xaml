@@ -84,8 +84,52 @@
                     IsReadOnly="True"
                     HeadersVisibility="None"
                     ItemsSource="{x:Bind results_sub_3}"/>
+                <TextBlock Grid.Row="8" x:Uid="Results_Mul_2" Style="{ThemeResource SubheaderTextBlockStyle}" TextAlignment="Center" Margin="16"/>
 
-       
+                <controls:DataGrid Grid.Row="9"  x:Name="ResultsGrid_mul_2"
+                                    Height="auto" Margin="12"
+                                    GridLinesVisibility="All"
+                                    CanUserReorderColumns="False" 
+                                    CanUserResizeColumns="False"
+                                    IsReadOnly="True"
+                                    HeadersVisibility="None"
+                                    ItemsSource="{x:Bind results_mul_2}"/>
+
+                <TextBlock Grid.Row="10" x:Uid="Results_Mul_3" Style="{ThemeResource SubheaderTextBlockStyle}" TextAlignment="Center" Margin="16"/>
+
+                <controls:DataGrid Grid.Row="11" x:Name="ResultsGrid_mul_3"
+                                    Height="auto" Margin="12"
+                                    GridLinesVisibility="All"
+                                    CanUserReorderColumns="False" 
+                                    CanUserResizeColumns="False"
+                                    IsReadOnly="True"
+                                    HeadersVisibility="None"
+                                    ItemsSource="{x:Bind results_mul_3}"/>
+
+                <TextBlock Grid.Row="12" x:Uid="Results_Div_2" Style="{ThemeResource SubheaderTextBlockStyle}" TextAlignment="Center" Margin="16"/>
+
+                <controls:DataGrid Grid.Row="13" x:Name="ResultsGrid_div_2"
+                                    Height="auto" Margin="12"
+                                    GridLinesVisibility="All"
+                                    CanUserReorderColumns="False" 
+                                    CanUserResizeColumns="False"
+                                    IsReadOnly="True"
+                                    HeadersVisibility="None"
+                                    ItemsSource="{x:Bind results_div_2}"/>
+
+                <TextBlock Grid.Row="14" x:Uid="Results_Div_3" Style="{ThemeResource SubheaderTextBlockStyle}" TextAlignment="Center" Margin="16"/>
+
+                <controls:DataGrid Grid.Row="15" x:Name="ResultsGrid_div_3"
+                                    Height="auto" Margin="12"
+                                    GridLinesVisibility="All"
+                                    CanUserReorderColumns="False" 
+                                    CanUserResizeColumns="False"
+                                    IsReadOnly="True"
+                                    HeadersVisibility="None"               
+                                    ItemsSource="{x:Bind results_div_3}"/>
+
+
+
             </Grid>
         </ScrollViewer>
 
